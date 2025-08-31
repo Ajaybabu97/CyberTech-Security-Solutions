@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+// ==========================
+// React Router Setup & App Component
+// ==========================
 
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Import react-router components for routing functionality
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// ==========================
+// Import Pages Components
+// ==========================
+import HomePage from "./components/HomePage";
+import AboutPage from "./components/AboutPage";
+import ClientsPage from "./components/ClientsPage";
+import ContactPage from "./components/ContactPage";
+
+// ==========================
+// Import Navbar Component
+// ==========================
+import Navbar from "./components/Navbar";
+
+// ==========================
+// Main App Component with Router Configuration
+// ==========================
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        {/* Navbar will always stay visible on top */}
+        <Navbar />
+
+        {/* Define application routes mapping URL paths to components */}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/clients" element={<ClientsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
+// Export the App component as default
 export default App;

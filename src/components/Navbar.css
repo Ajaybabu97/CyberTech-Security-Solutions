@@ -1,0 +1,94 @@
+/* ==============================
+   Custom Navbar Styles
+   =============================== */
+
+/* ==========================================================================
+   Main Navbar Container
+   - Glassmorphism effect with transparency and blur
+   - Rounded bottom corners for smooth modern look
+   - Soft shadow for subtle elevation
+   - Responsive max-width to center and contain navbar on large screens
+   ========================================================================== */
+.navbar {
+  font-size: 1.08rem;
+  transition: box-shadow 0.2s, background 0.2s;
+  background: rgba(255, 255, 255, 0.207) !important; /* Semi-transparent white bg */
+  backdrop-filter: blur(8px); /* Glass effect */
+  border-radius: 0 0 32px 32px; /* Rounded bottom corners */
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  margin: 0 auto;
+  max-width: 1200px; /* Contain width on large screens */
+}
+
+/* Logo Text Styling */
+.Text-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff8800;
+}
+
+/* ==========================================================================
+   Responsive Adjustments
+   - Remove border radius and max-width on smaller screens for better fitting
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .navbar {
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+
+/* ==========================================================================
+   Navbar Brand Styles
+   ========================================================================== */
+.navbar .navbar-brand {
+  font-size: 1.3rem;
+}
+
+/* ==========================================================================
+   Navbar Links Default Styling
+   ========================================================================== */
+.navbar .nav-link {
+  color: #333 !important;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* ==========================================================================
+   Navbar Link Hover and Focus Effects
+   - Subtle background color change
+   - Primary brand color text on hover/focus
+   ========================================================================== */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  background: #f0f4fa;
+  color: #0d6efd !important;
+}
+
+/* ==========================================================================
+   Active Link Styling
+   - Highlight the active page link
+   - Blue background with white bold text
+   - Adds slight shadow for subtle elevation
+   ========================================================================== */
+.navbar .active-link {
+  background: #0d6efd;
+  color: #fff !important;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.08);
+}
+
+/* ==========================================================================
+   Mobile Responsive Navbar Links
+   - Stack links vertically
+   - Center text for better mobile usability
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .navbar .nav-link {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
+
+/* ==============================
+   End Navbar Styles
+   =============================== */

@@ -1,0 +1,174 @@
+/* ==========================================================================
+   Hero Section - Fixed Full Screen Background
+   ========================================================================== */
+/* The main hero section uses a fixed background and centers content vertically/horizontally */
+.about-hero-section {
+  height: 85vh;
+  width: 100%;
+  /* background: url("https://res.cloudinary.com/dzbuvo8dr/image/upload/v1756385347/Home_bg_qp1y5s.webp")
+    center/cover no-repeat; */
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================================================================
+   Hero Card - Section Overlay
+   ========================================================================== */
+/* Semi-transparent card styling with blur and shadow for the hero text */
+.about-hero-card {
+  background: rgba(238, 234, 234, 0.258); /* Customize color and opacity */
+  color: #fff; /* Customize text color */
+  max-width: 700px;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+/* Hero Section: Title Style */
+.about-hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #800080;
+}
+
+/* Hero Section: Subtitle Style */
+.about-hero-subtitle {
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+/* ==========================================================================
+   Services Content Section
+   ========================================================================== */
+/* Limit content container width for cards to improve appearance */
+.about-content-section {
+  max-width: 1100px;
+}
+
+/* ==========================================================================
+   Service Cards Grid & Cards
+   ========================================================================== */
+/* Style for service card containers */
+.about-service-card {
+  background-color: #80008032;
+  transition: box-shadow 0.3s ease;
+}
+
+/* On hover, add more shadow to service cards for feedback */
+.about-service-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Images inside each service card */
+.about-service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Title styling for each service card */
+.about-service-title {
+  font-weight: 600;
+  margin-top: 0.75rem;
+  color: #800080;
+}
+.about-content-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: aqua;
+}
+
+/* Description text in each service card */
+.about-service-description {
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 0.5rem;
+}
+
+
+/* Responsive adjustments for screens smaller than 992px (large tablets and below) */
+@media (max-width: 991.98px) {
+  .about-hero-title {
+    font-size: 2.4rem;
+  }
+  .about-hero-subtitle {
+    font-size: 1.1rem;
+  }
+  .about-service-image {
+    height: 180px;
+  }
+  .about-service-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Responsive adjustments for screens smaller than 768px (tablets and large phones) */
+@media (max-width: 767.98px) {
+  .about-hero-section {
+    height: 60vh;
+    background-attachment: scroll; /* Disable fixed background for performance */
+    padding: 2rem 1rem;
+  }
+  .about-hero-card {
+    max-width: 90%;
+    padding: 2rem 1.5rem;
+  }
+  .about-hero-title {
+    font-size: 2rem;
+  }
+  .about-hero-subtitle {
+    font-size: 1rem;
+  }
+  .about-service-image {
+    height: 150px;
+  }
+  .about-service-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Responsive adjustments for small screens under 576px (small phones) */
+@media (max-width: 575.98px) {
+  .about-hero-section {
+    height: 50vh;
+    padding: 1.5rem 1rem;
+  }
+  .about-hero-title {
+    font-size: 1.7rem;
+  }
+  .about-hero-subtitle {
+    font-size: 0.9rem;
+  }
+  .about-service-image {
+    height: 120px;
+  }
+  .about-service-card {
+    padding: 1rem 0.8rem;
+  }
+  .about-cards-row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* For very tall vertical screen resolution like 1080x2400 */
+@media (min-width: 1080px) and (min-height: 2400px) {
+  .about-hero-section {
+    height: 60vh;
+  }
+  .about-hero-title {
+    font-size: 3.2rem;
+  }
+  .about-hero-subtitle {
+    font-size: 1.5rem;
+  }
+  .about-service-image {
+    height: 220px;
+  }
+}

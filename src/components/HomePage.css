@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Hero Section - Fullscreen Background with Fixed Position
+   ========================================================================== */
+.hero-section {
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  /* background: url("https://res.cloudinary.com/dzbuvo8dr/image/upload/v1756387979/CyberTech.png")
+    center/cover no-repeat; */
+  background-attachment: fixed; /* Keeps background fixed during scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================================================================
+   Hero Card - Centered semi-transparent container
+   ========================================================================== */
+.hero-card {
+  background: rgba(255, 255, 255, 0.137); /* Semi-transparent white */
+  color: #ffffff; /* White text */
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+}
+
+/* ==========================================================================
+   Hero Title Styling
+   ========================================================================== */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #800080; /* Bright orange */
+}
+
+/* ==========================================================================
+   Hero Subtitle Styling
+   ========================================================================== */
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #000000; /* Bright red */
+}
+
+/* ==========================================================================
+   Custom Button Styling
+   ========================================================================== */
+.custom-btn {
+  background-color: rgba(255, 255, 255, 0.15); /* Match card transparency */
+  color: #800080;
+  border: 2px solid #800080;
+  border-radius: 30px; /* Fully rounded pill shape */
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  backdrop-filter: blur(3px); /* Smooth with card */
+  transition: all 0.3s ease;
+}
+
+/* Button hover state */
+.custom-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Button Group Container - Flex layout with spacing
+   ========================================================================== */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+  margin-top: 25px;
+}
+

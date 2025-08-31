@@ -1,0 +1,44 @@
+/* Footer Styles */
+.footer {
+  background-color: #000000cc; /* Semi-transparent purple */
+  color: #ffffff;
+  box-shadow: 0 -3px 10px rgba(128, 0, 128, 0.5);
+}
+
+.footer h5 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.footer address {
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer h5 {
+    font-size: 1.25rem;
+  }
+
+  .footer address {
+    font-size: 0.9rem;
+  }
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-bottom p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #ddd;
+}

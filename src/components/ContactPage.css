@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Hero Section - Contact Banner with Fixed Background
+   ========================================================================== */
+.contact-hero-section {
+  height: 100vh; /* Full viewport height for immersive hero feel */
+  width: 100%;
+  background: url("https://res.cloudinary.com/dzbuvo8dr/image/upload/v1756629152/Contact_us_khk6lq.jpg")
+    center/cover no-repeat;
+  background-attachment: fixed; /* Fixed background for parallax effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================================================================
+   Hero Card Styling
+   ========================================================================== */
+.contact-hero-card {
+  background: #80008018; /* Very light semi-transparent overlay */
+  color: #800080;
+  max-width: 700px;
+  border-radius: 15px;
+  padding: 3rem 2.5rem;
+  backdrop-filter: blur(6px); /* Frosted glass effect */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ==========================================================================
+   Page Title in Hero
+   ========================================================================== */
+.contact-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Contact Info Icons Container
+   ========================================================================== */
+.contact-info-icons {
+  margin-top: 2rem;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   Individual Contact Card
+   ========================================================================== */
+.contact-icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  padding: 15px 10px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover and focus effects for clickable cards */
+.contact-icon-card:hover,
+.contact-icon-card:focus {
+  transform: scale(1.08);
+  box-shadow: 0 12px 20px rgba(0, 191, 165, 0.35);
+  outline: none;
+}
+
+/* ==========================================================================
+   Icon Styling within Cards
+   ========================================================================== */
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #00ffcc; /* Customize this color if needed */
+  transition: color 0.3s ease;
+}
+
+/* Change icon color on hover/focus */
+.contact-icon-card:hover .contact-icon,
+.contact-icon-card:focus .contact-icon {
+  color: #00bfa5;
+}
+
+/* ==========================================================================
+   Text under icons
+   ========================================================================== */
+.contact-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  user-select: text; /* Allow text selection */
+  white-space: nowrap;
+  text-align: center;
+}
